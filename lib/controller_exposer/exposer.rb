@@ -1,6 +1,11 @@
 module ControllerExposer
   module Exposer
-  private
+    private
+
+    def enforce_expose!
+      include ControllerExposer::Enforcer
+    end
+
     def expose(attr)
       attr_accessor attr
       helper_method attr

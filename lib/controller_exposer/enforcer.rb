@@ -1,6 +1,7 @@
 module ControllerExposer
   module Enforcer
-  protected
+    protected
+
     def view_assigns
       {}
     end
